@@ -1,3 +1,10 @@
+//color variable declaration
+$header-bgcolor: #ffab73;
+$main-bgcolor: #ffd384;
+$footer-bgcolor: #ffaec0;
+
+$para-fontsize: 15px;
+
 /* browser reset code */
 
 *{
@@ -5,3 +12,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    background: $header-bgcolor;
+}
+// nav style
+nav{
+    margin-top: 15px;
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            margin: 0 15px;
+            a{
+                display: inline-block;
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                transition: 0.4s;
+                border-radius: 5px;
+                
+            }
+            a:hover{
+                background-color: black;
+            }
+        }
+    }
+}
+
+
+
+
+nav ul li a{
+
+}
+
+nav ul li a:hover{
+
+}
+
+main{
+    background: $main-bgcolor;
+}
+#about{
+    font-size: $para-fontsize;
+}
+footer{
+    background: $footer-bgcolor;
+}
+
+
