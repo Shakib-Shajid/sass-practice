@@ -17,6 +17,25 @@ header {
     background: $header-bgcolor;
 }
 
+.btn{
+    border:none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-download{
+    @extend .btn;
+    background-color: gray;
+}
+
+.learn-more{
+    @extend .btn;
+    background-color: lightgreen;
+}
+
+
 @mixin para-style{
     font-size: 16px;
     text-align: justify;

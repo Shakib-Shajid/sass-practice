@@ -9,6 +9,22 @@ header {
   background: #ffab73;
 }
 
+.btn, .learn-more, .btn-download {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-download {
+  background-color: gray;
+}
+
+.learn-more {
+  background-color: lightgreen;
+}
+
 #about p {
   font-size: 16px;
   text-align: justify;
