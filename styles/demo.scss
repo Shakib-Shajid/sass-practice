@@ -32,6 +32,16 @@ header {
     @include para-style;
 }
 
+@mixin h3-style($size, $style, $color){
+    font-size: $size;
+    text-align: $style;
+    color: $color;
+}
+
+#quality p{
+    @include h3-style(18px, left, blue);
+}
+
 // nav style
 nav {
     margin-top: 15px;
