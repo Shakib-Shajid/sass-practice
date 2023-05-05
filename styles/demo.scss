@@ -13,6 +13,21 @@ $para-fontsize: 15px;
     box-sizing: border-box;
 }
 
+@mixin setFontSize($value){
+    @if $value == small{
+        font-size: 12px;
+    }    
+    @else if $value == medium{
+        font-size: 16px;
+    }    
+    @else if $value == large{
+        font-size: 20px;
+    }
+    @else {
+        font-size: none;
+    }
+}
+
 header {
     background: $header-bgcolor;
 }
@@ -79,6 +94,7 @@ nav {
                 padding: 10px;
                 transition: 0.4s;
                 border-radius: 5px;
+                @include setFontSize(large);
 
             }
 
