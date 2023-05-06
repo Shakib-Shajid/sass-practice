@@ -13,11 +13,17 @@ $para-fontsize: 15px;
     box-sizing: border-box;
 }
 
-@each $color in red, green, blue{
+
+$colors: (color: red, color2: green, color3: blue);
+
+
+@each $key, $color in $colors{
     .#{$color}-text {
         color: $color;
     }
 }
+
+
 
 @mixin setFontSize($value){
     @if $value == small{
